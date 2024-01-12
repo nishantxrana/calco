@@ -1,0 +1,154 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f0f0f0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+}
+
+#calculator {
+    width: 300px;
+    background-color: #fff;
+    border-radius: 25px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(8, 1fr);
+    grid-gap: 10px;
+}
+
+input {
+    grid-column: span 4;
+    grid-row: span 3;
+    
+    width: 100%;
+     font-size: 40px;
+    border: none;
+    border-radius: inherit;
+    text-align:end;
+    color: #333;
+    background-color: whitesmoke;
+    margin-bottom: 10px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+     
+}
+
+button {
+    padding: 15px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    border-radius: 30px;
+    background-color: #3498db;
+    color: #fff;
+    transition: background-color 0.3s ease, transform 0.1s ease;
+}
+
+ 
+
+button:hover {
+    background-color: grey;
+}
+
+.equal {
+    background-color: #e74c3c;
+    font-size: 25px;
+}
+
+.function {
+    background-color: #2ecc71;
+}
+
+.operator {
+    background-color: #e67e22;
+}
+
+button:active {
+    transform: translateY(2px);
+}
+
+#equalb {
+    width: 315%;
+    border-radius: 25px;
+
+}
+
+#plus {
+    width: 215%;
+    border-radius: 35px;
+    font-size: 25px;
+
+}
+#divide{
+    font-size: 30px;
+}
+#subtract{
+    font-size: 30px;
+}
+#modulas{
+    font-size: 20px;
+}
+
+
+
+
+
+body.night-mode {
+    background-color: #222;
+    color: #fff;
+}
+
+#calculator.night-mode {
+    background-color: black;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+}
+
+input.night-mode {
+    color: #fff;
+    background-color: rgb(8, 8, 8);
+    box-shadow: 0 0 5px rgba(255, 255, 255, 0.2);
+}
+
+button.night-mode {
+    background-color: #333333;
+    color: #fff;
+}
+.operator.night-mode{
+    background-color: #FF9F08;
+}
+button.night-mode:hover {
+    background-color: #777;
+}
+.function.night-mode{
+    background-color: #a5a5a5;
+}
+#nightModeToggle {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+#nightModeToggle:hover {
+    background-color: #2980b9;
+}
+
+ #nightModeToggle::before {
+    content: '☀️';  
+    
+}
+
+body.night-mode #nightModeToggle::before {
+    content: '🌙';  
+}
+
+

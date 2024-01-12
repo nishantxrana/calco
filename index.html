@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+
+    <div id="calculator">
+
+        <input type="text" id="result" class="calculator-input" readonly>
+
+
+         <button class="function" onclick="clearResult()">C</button>
+        <button class="function" onclick="calculateSquareRoot()">√</button>
+        <button class="function" onclick="calculateSquare()">x²</button>
+        <button id="modulas" class="operator" onclick="appendToResult('%')">%</button>
+
+        <button onclick="appendToResult('7')">7</button>
+        <button onclick="appendToResult('8')">8</button>
+        <button onclick="appendToResult('9')">9</button>
+        <button id="divide" class="operator" onclick="appendToResult('/')">÷</button>
+        <button onclick="appendToResult('4')">4</button>
+        <button onclick="appendToResult('5')">5</button>
+        <button onclick="appendToResult('6')">6</button>
+        <button class="operator" onclick="appendToResult('*')">X</button>
+        <button onclick="appendToResult('1')">1</button>
+        <button onclick="appendToResult('2')">2</button>
+        <button onclick="appendToResult('3')">3</button>
+        <button id="subtract" class="operator" onclick="appendToResult('-')">-</button>
+
+        <button onclick="appendToResult('.')">.</button>
+        <button onclick="appendToResult('0')">0</button>
+        <button class="operator" id="plus" onclick="appendToResult('+')">+</button>
+
+         <button class="equal" onclick="calculateResult()" style="grid-column: span 4;">=</button>
+
+    </div>
+
+    <!-- Night Mode Toggle Button -->
+    <button id="nightModeToggle" onclick="toggleNightMode()"></button>
+
+    <script src="script.js"></script>
+</body>
+</html>
