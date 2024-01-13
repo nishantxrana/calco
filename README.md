@@ -6,7 +6,7 @@ Welcome to the Calculator web application! This simple calculator allows users t
 
 ## Demo
 
-Check out the live demo of the Calculator: [Live Demo](https://nishantxrana.github.io/calcoo/).
+Check out the live demo of the Calculator: [Live Demo](https://nishantxrana.github.io/calco/).
 
 
 
